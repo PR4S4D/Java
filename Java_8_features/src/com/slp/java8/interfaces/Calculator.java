@@ -12,8 +12,20 @@ public interface Calculator {
 	double division();
 	
 	// A default method cannot override method from Object class
-/*	default boolean equals(Object o){
+  /*	default boolean equals(Object o){
 		return true;
 	}*/
+	
+	
+	
+	/**
+	 * 
+	 * static methods are supported in interfaces
+	 * 
+	 * @return
+	 */
+	static double squareRoot(Double d){
+		return Math.sqrt(d);
+	}
 }
  

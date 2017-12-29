@@ -26,5 +26,10 @@ public class CalculatorImpl implements Calculator, BasicCalculator {
 		return BasicCalculator.super.subtract(a, b);
 	}
 	
+	
+	public static void main(String[] args) {
+		// static method in interfaces
+		System.out.println(Calculator.squareRoot(10000d));
+	}
 
 }
