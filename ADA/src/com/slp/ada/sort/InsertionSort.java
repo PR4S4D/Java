@@ -1,9 +1,8 @@
 package com.slp.ada.sort;
 
 /**
- * Quadratic 
- * stable
- * Insert the selected element in the sorted partion of the array
+ * Quadratic stable Insert the selected element in the sorted partition of the
+ * array
  *
  */
 public class InsertionSort {
@@ -15,16 +14,18 @@ public class InsertionSort {
 			int newElement = array[firstUnsortedIndex];
 
 			int i;
-			
-			for(i = firstUnsortedIndex; i > 0 && array[i-1] > newElement; i--) {
-				array[i] = array[i-1];
+
+			for (i = firstUnsortedIndex; i > 0 && array[i - 1] > newElement; i--) {
+				array[i] = array[i - 1];
 			}
-				
+
 			array[i] = newElement;
+
 		}
 
-		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i] + "\t");
+		for (int j = 0; j < array.length; j++) {
+			System.out.print(array[j] + "\t");
+
 		}
 	}
 

@@ -11,6 +11,7 @@ public class BubbleSort {
 
 		int[] array = { 23, 45, 21, -11, 3, 2 };
 
+		// larger values bubble up to the end of the array
 		for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
 			for (int i = 0; i < lastUnsortedIndex; i++) {
 				if (array[i] > array[i + 1]) {
